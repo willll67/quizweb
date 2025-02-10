@@ -15,10 +15,7 @@ function PersonalityTypes() {
             <div key={typeKey} className="personality-card">
               <h3>{typeInfo.title}</h3>
               <p>
-                <strong>Analysis:</strong> {typeInfo.analysis}
-              </p>
-              <p>
-                <strong>Advice:</strong> {typeInfo.advice}
+                <strong>Description:</strong> {typeInfo.description}
               </p>
             </div>
           );

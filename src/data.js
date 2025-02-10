@@ -149,32 +149,38 @@ export const questions = [
     Ant: {
       title: "The Disciplined Saver (Ant)",
       analysis: "You are careful, disciplined, and methodical with your money. You prioritize security and steady growth.",
-      advice: "Keep an eye on opportunities to diversify your investments while maintaining your careful habits."
+      advice: "Keep an eye on opportunities to diversify your investments while maintaining your careful habits.",
+      description: "You’re like an ant—you work hard and always plan ahead. You save little by little and make sure you have enough for later, just like ants store food for winter."
     },
     Owl: {
       title: "The Strategic Planner (Owl)",
       analysis: "You are wise, analytical, and future-focused. Your detailed planning pays off in long-term stability.",
-      advice: "Continue honing your strategy, and consider balancing analysis with timely actions."
+      advice: "Continue honing your strategy, and consider balancing analysis with timely actions.",
+      description: "You’re the wise one. You do your homework before spending and always think things through. Like an owl, you keep a careful watch on your finances."
     },
     Bear: {
       title: "The Cautious Guardian (Bear)",
       analysis: "You focus on security and are well-prepared for uncertainties. While your cautious approach is a strength, it may limit potential growth.",
-      advice: "Consider exploring low-risk investment options to enhance your financial growth."
+      advice: "Consider exploring low-risk investment options to enhance your financial growth.",
+      description: "You put safety first. You keep a solid reserve of money for emergencies, much like a bear prepares for winter. You’re all about being secure and cautious."
     },
     Dolphin: {
       title: "The Social Spender (Dolphin)",
       analysis: "You enjoy life and value experiences, even if it means spending more in the moment. A little extra planning could go a long way.",
-      advice: "Try to set aside a portion of your income for savings to balance fun and prudence."
+      advice: "Try to set aside a portion of your income for savings to balance fun and prudence.",
+      description: "You love to enjoy life. You’re not afraid to spend on experiences and having fun, just like a playful dolphin. You believe life is meant to be enjoyed while still keeping an eye on your money."
     },
     Squirrel: {
       title: "The Prepared Hoarder (Squirrel)",
       analysis: "You are always gathering resources and building a solid safety net. However, you might miss out on growth opportunities by being overly cautious.",
-      advice: "Look into moderate-risk investments to help your savings grow faster."
+      advice: "Look into moderate-risk investments to help your savings grow faster.",
+      description: "You’re always saving for a rainy day. Just like a squirrel gathers and hides acorns, you’re busy stashing away money so you’re ready for anything."
     },
     Fox: {
       title: "The Opportunistic Investor (Fox)",
       analysis: "You are agile and ready to seize financial opportunities by taking calculated risks. Sometimes, your quick decisions may benefit from a little more analysis.",
-      advice: "Balance your adventurous spirit with careful research to maximize your returns."
+      advice: "Balance your adventurous spirit with careful research to maximize your returns.",
+      description: "You’re quick, smart, and ready to grab a good opportunity when it comes along. Like a clever fox, you take smart risks to make the most of your money."
     }
   };
   

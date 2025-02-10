@@ -12,10 +12,10 @@ body {
 }
 
 .App {
-  max-width: 1000px;
+  max-width: 1100px;
   margin: 0 auto;
   background: #fff;
-  padding: 20px;
+  padding: 50px;
 }
 
 .navbar {
