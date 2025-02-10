@@ -7,37 +7,31 @@ const personalityData = [
     type: 'Ant',
     title: 'The Super Planner',
     description: "You're like an ant—you work hard and always plan ahead. You save little by little to build a strong financial foundation.",
-    image: '', // Replace with your actual image URL if available
   },
   {
     type: 'Owl',
     title: 'The Wise Thinker',
     description: "You analyze every move and make decisions thoughtfully. Like an owl, you keep a careful watch over your finances.",
-    image: '',
   },
   {
     type: 'Bear',
     title: 'The Safety-First Type',
     description: "Security is your top priority. Just like a bear hibernates to stay safe, you build a solid reserve for unexpected times.",
-    image: '',
   },
   {
     type: 'Dolphin',
     title: 'The Fun-Lover',
     description: "You love to enjoy life and spend on experiences. Like a playful dolphin, you know how to balance fun with financial awareness.",
-    image: '',
   },
   {
     type: 'Squirrel',
     title: 'The Saver',
     description: "You’re always stashing away money for a rainy day—just like a squirrel gathering acorns for winter.",
-    image: '',
   },
   {
     type: 'Fox',
     title: 'The Clever Risk-Taker',
     description: "Quick-witted and agile, you’re ready to seize opportunities. Like a fox, you take calculated risks to maximize your returns.",
-    image: '',
   }
 ];
 
@@ -51,9 +45,6 @@ const PersonalityTypes = () => {
       <div className="personality-grid">
         {personalityData.map((item) => (
           <div key={item.type} className="personality-card">
-            <div className="personality-image-container">
-              <img src={item.image} alt={item.title} className="personality-image" />
-            </div>
             <div className="personality-info">
               <h3>{item.title}</h3>
               <p>{item.description}</p>
