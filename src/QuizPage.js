@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 import { questions, quizResultDescriptions } from './data';
 import './App.css';
 
-
 const QuizPage = () => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [answers, setAnswers] = useState({});
@@ -50,17 +49,17 @@ const QuizPage = () => {
 
   return (
     <div className="quiz-page">
-      <h2>Discover Your Money Management Style!</h2>
-      <p>
-        Take this fun quiz to uncover your unique financial personality through a series of engaging questions.
-      </p>
+      <div className="quiz-header">
+        <h2>Discover Your Money Management Style!</h2>
+        <p>Answer a few fun questions to reveal your unique financial personality.</p>
+      </div>
       <form onSubmit={handleSubmit}>
-        <div className="question-block">
+        <div className="question-card">
           <h3>{`Question ${currentQuestion.id} of ${questions.length}`}</h3>
           <p>{currentQuestion.question}</p>
-          {currentQuestion.options.map((option, index) => (
-            <div key={index} className="option">
-              <label>
+          <div className="options-container">
+            {currentQuestion.options.map((option, index) => (
+              <label key={index} className="option-label">
                 <input
                   type="radio"
                   name={`question-${currentQuestion.id}`}
@@ -69,33 +68,33 @@ const QuizPage = () => {
                   onChange={() => handleChange(currentQuestion.id, option.type)}
                   required
                 />
-                {option.option}
+                <span className="option-text">{option.option}</span>
               </label>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-        <div className="navigation-buttons">
+        <div className="nav-buttons">
           <button
             type="button"
-            className="nav-button"
+            className="nav-btn"
             onClick={goToPreviousQuestion}
             disabled={currentQuestionIndex === 0}
           >
             ← Previous
           </button>
           {currentQuestionIndex < questions.length - 1 ? (
-            <button type="button" className="nav-button" onClick={goToNextQuestion}>
+            <button type="button" className="nav-btn" onClick={goToNextQuestion}>
               Next →
             </button>
           ) : (
-            <button type="submit" className="submit-button">
+            <button type="submit" className="submit-btn">
               Submit Quiz
             </button>
           )}
         </div>
       </form>
       {result && (
-        <div className="result">
+        <div className="result-container">
           <h3>{result.title}</h3>
           <p>
             <strong>Result Analysis:</strong> {result.analysis}
